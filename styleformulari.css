@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0 20px;
+}
+
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+}
+
+.header-links a:hover{
+    background-color: lightblue;
+}
+
+/* Estils dels enllaços */
+.header-links a {
+    text-decoration: none; /* Elimina el subratllat */
+    color: white; /* Color del text */
+    font-weight: bold; /* Text en negreta */
+}
+
+/* Contenidor principal */
+.container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Columna lateral */
+.projects {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Detalls i imatges */
+.details {
+    flex: 2;
+    padding: 20px;
+    border: 1px solid #ccc;
+}

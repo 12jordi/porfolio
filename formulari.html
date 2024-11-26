@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari</title>
+    <link rel="stylesheet" href="styleformulari.css">
+</head>
+<body>
+    <!-- Encapçalament i menú de navegació -->
+    <header>
+        <nav class="header-links">
+            <a href="index.html">Index</a>
+            <a href="projectes.html">Projectes</a>
+            <a href="formulari.html">Formulari</a>
+        </nav>
+    </header>
+
+    <!-- Títol principal -->
+    <h1 style="text-align: center; margin-top: 20px;">Formulari</h1>
+
+    <!-- Formulari -->
+    <div class="container">
+        <form action="enviar.php" method="post" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-width: 600px; margin: auto;">
+            <!-- Camp de text -->
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;">
+
+            <!-- Correu electrònic -->
+            <label for="email">Correu electrònic:</label>
+            <input type="email" id="email" name="email" required pattern=".+@.+" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;">
+            <span id="emailError" style="font-size: 14px; color: red; display: none;">El correu ha de contenir una @.</span>
+
+            <!-- Telèfon -->
+            <label for="telefon">Telèfon:</label>
+            <input type="tel" id="telefon" name="telefon" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;">
+
+            <!-- Empresa -->
+            <label for="empresa">Empresa:</label>
+            <input type="text" id="empresa" name="empresa" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;">
+
+            <!-- Text llarg -->
+            <label for="missatge">Missatge:</label>
+            <textarea id="missatge" name="missatge" rows="4" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+
+            <!-- Botó d'enviament -->
+            <button type="submit" style="width: 100%; padding: 12px 20px; background-color: #007BFF; color: white; border: none; border-radius: 4px; font-size: 18px; cursor: pointer; transition: background-color 0.3s ease;">
+                Enviar
+            </button>
+        </form>
+    </div>
+</body>
+</html>
+
