@@ -14,6 +14,10 @@ body {
     padding: 0 20px;
 }
 
+.personal-image {
+    width: 250px;  /* Ajusta a l'amplada que vulguis */
+    height: 250px; /* Ajusta a l'alçada que vulguis */
+    object-fit: cover;}
 
 header {
     background-color: #333;
